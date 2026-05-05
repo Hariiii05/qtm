@@ -4,3 +4,6 @@ CDP: khám phá tbị lân cận
 STP: tránh vòng lặp mạng
 BGP: định tuyến liên mạng lớn và phức tạp
 RIP: khoảng cách
+
+# erase start
+$ copy run start
