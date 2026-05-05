@@ -68,3 +68,13 @@ OSPF (Open Shortest Path First) là một giao thức định tuyến link - sta
 Cổng trunk: khi một liên kết giữa hai switch hoặc giữa 1 router truyền tải lưu lượng của nhiều VLAN 
 Cổng truck phải chạy giao thức truyền đặc biệt : ISL or 802.1q
 
+
+Domain: lưu trữ thông tin các đối tượng
+AD được kiến tạo bởi 1 hay nhiều domain, có thể triển khai trên nhiều physical structure
+Truy xuất vào domain được quản trị thông qua Access Control Lists (ALC)
+OU (Organizational Unit): tổ chức các đối tượng thành các nhóm quản trị luận lý, tạo nên các cây OUs trong cùng 1 domain
+Trees: các domain được tổ chức theo cấu trúc hình cây (parent-child) ( 1 cha nhiều con - 1 con 1 cha)
+Forests: các domain có mối quan hệ tin cậy
+Site: nói về vị trí địa lý của các domain trong hệ thống. Khi hệ thống các domain phân tán ở vị trí khác nhau, những nơi này có quan hệ với nhau thì được gọi là các site
+DC: Domain controller: 1 máy tính chuyên dụng được setup WS, có bản sao của AD, phản hồi yêu cầu trong domain, xác thực người dùng.
+
