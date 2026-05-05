@@ -6,4 +6,65 @@ BGP: định tuyến liên mạng lớn và phức tạp
 RIP: khoảng cách
 
 # erase start
-$ copy run start
+# copy run start
+
+2.1. Bộ định tuyến (Router)
+2.1.1. Chức năng
+Hoạt động ở tầng 3 (OSI)
+Kết nối nhiều loại mạng
+Quản lý lưu lượng truyền giữa các mạng dựa vào địa chỉ IP
+Tìm đường đi cho các gói tin trên môi trường liên mạng (định tuyến) và chuyển tiếp các gói tin
+2.1.2. Các thành phần bên trong của Router
+Trong: CPU, ROM, RAM, Flash, NVRAM
+
+Router cần có HDH để chạy các tập tin cấu hình: chứa các câu lệnh và các thông số để điều khiển luồng dữ liệu ra vào trên router, chứa GTDT
+Giao thức định tuyến chọn con đường đi tốt nhất cho các gói dữ liệu
+…
+Interfaces: Là nơi router kết nối với bên ngoài
+Ngoài: LAN, WAN, Console
+Console: rollover, cấu hình trực tiếp cho router
+AUX: giống với console, nhưng sử dụng kết nối dial-up tới modem, hỗ trợ cấu hình từ xa
+LAN: Gigabit, Fast Ethernet , giao tiếp qua hub hoặc switch: sử dụng cáp thẳng
+WAN: Serial: thuê kênh riêng, kết nối chuyển mạch kênh, kết nối chuyển mạch gói
+
+2.2. Các giao thức định tuyến
+2.2.1. Khái niệm
+Định tuyến là quá trình xác định đường đi tối ưu để đi đến một đích nào đó trên mạng sử dụng thiết bị chuyên dụng
+Các thông tin này được lưu trong bảng định tuyến
+Giao thức định tuyến là ngôn ngữ giao tiếp giữa các router, xây dựng và duy trì bảng định tuyến
+Định tuyến tĩnh: xây dựng thủ công
+Định tuyến động: thực hiện bằng router
+Chọn đường đi
+Distance vector chọn đường đi theo hướng và khoảng cách tới đích
+Link state: đường đi ngắn nhất dựa vào cấu trúc của toàn bộ mạng theo trạng thái của các đường liên kết mạng
+Xây dựng bảng định tuyến
+Cấu hình thủ công (Static Routing): thủ công, định tuyến không thay đổi, nhỏ
+Tự động (Dynamic Routing): cập nhật thông tin, thay đổi đường khi có sự cố xảy ra, lớn
+
+Vùng tự trị (AS): tập hợp mạng con được kết nối với nhau bởi Router
+Khoảng cách quản trị (AD): đánh giá độ tin cậy (0 đến 255), 0 là cao nhất -> chọn cái nhỏ hơn
+Metric: giá trị dùng để định lượng mức độ tối ưu của 1 đường đi trong tính toán định tuyến, nhỏ nhất thì tối ưu nhất. RIP tính dựa vào số router trên đường đi tới đích gọi là hop-count. 
+
+Sự hội tụ mạng (convergence): thông tin định tuyến trong các bảng định tuyến phải cùng chính xác.
+Cân bằng tải (Load balancing): sử dụng băng thông hiệu quả, có thể dùng làm tuyến dự phòng trong khi tuyến đường chính bị ngắn
+
+2.4. Cấu hình và quản trị router
+
+người dùng > đặc quyền #
+
+
+Giao thức CDP: hoạt động tại layer 2 của mô hình OSI, giúp các thiết bị được kết nối trực tiếp với nhau trao đổi thông tin.
+CDP không phải giao thức định tuyến
+
+2.5. Cấu hình và quản trị Switch
+RIP - Routing Information Protocol: là giao thức định tuyến vector khoảng cách
+Hoạt động: chu kỳ 30s, gửi toàn bộ routing table ra các router láng giềng.
+RIP chỉ sử dụng metric là hop-count để tính ra tuyến đường tốt nhất tới mạng đích
+Sử dụng thuật toán Bellman-Ford để xây dựng routing table
+
+OSPF (Open Shortest Path First) là một giao thức định tuyến link - state điển hình
+
+
+Cổng trunk: khi một liên kết giữa hai switch hoặc giữa 1 router truyền tải lưu lượng của nhiều VLAN 
+Cổng truck phải chạy giao thức truyền đặc biệt : ISL or 802.1q
+
