@@ -1,80 +1,11 @@
-VTP: switch gửi bản tin tk vlan tự động
-OSPF: tìm đường ngắn nhất
-CDP: khám phá tbị lân cận
-STP: tránh vòng lặp mạng
-BGP: định tuyến liên mạng lớn và phức tạp
-RIP: khoảng cách
-
-# erase start
-# copy run start
-
-2.1. Bộ định tuyến (Router)
-2.1.1. Chức năng
-Hoạt động ở tầng 3 (OSI)
-Kết nối nhiều loại mạng
-Quản lý lưu lượng truyền giữa các mạng dựa vào địa chỉ IP
-Tìm đường đi cho các gói tin trên môi trường liên mạng (định tuyến) và chuyển tiếp các gói tin
-2.1.2. Các thành phần bên trong của Router
-Trong: CPU, ROM, RAM, Flash, NVRAM
-
-Router cần có HDH để chạy các tập tin cấu hình: chứa các câu lệnh và các thông số để điều khiển luồng dữ liệu ra vào trên router, chứa GTDT
-Giao thức định tuyến chọn con đường đi tốt nhất cho các gói dữ liệu
-…
-Interfaces: Là nơi router kết nối với bên ngoài
-Ngoài: LAN, WAN, Console
-Console: rollover, cấu hình trực tiếp cho router
-AUX: giống với console, nhưng sử dụng kết nối dial-up tới modem, hỗ trợ cấu hình từ xa
-LAN: Gigabit, Fast Ethernet , giao tiếp qua hub hoặc switch: sử dụng cáp thẳng
-WAN: Serial: thuê kênh riêng, kết nối chuyển mạch kênh, kết nối chuyển mạch gói
-
-2.2. Các giao thức định tuyến
-2.2.1. Khái niệm
-Định tuyến là quá trình xác định đường đi tối ưu để đi đến một đích nào đó trên mạng sử dụng thiết bị chuyên dụng
-Các thông tin này được lưu trong bảng định tuyến
-Giao thức định tuyến là ngôn ngữ giao tiếp giữa các router, xây dựng và duy trì bảng định tuyến
-Định tuyến tĩnh: xây dựng thủ công
-Định tuyến động: thực hiện bằng router
-Chọn đường đi
-Distance vector chọn đường đi theo hướng và khoảng cách tới đích
-Link state: đường đi ngắn nhất dựa vào cấu trúc của toàn bộ mạng theo trạng thái của các đường liên kết mạng
-Xây dựng bảng định tuyến
-Cấu hình thủ công (Static Routing): thủ công, định tuyến không thay đổi, nhỏ
-Tự động (Dynamic Routing): cập nhật thông tin, thay đổi đường khi có sự cố xảy ra, lớn
-
-Vùng tự trị (AS): tập hợp mạng con được kết nối với nhau bởi Router
-Khoảng cách quản trị (AD): đánh giá độ tin cậy (0 đến 255), 0 là cao nhất -> chọn cái nhỏ hơn
-Metric: giá trị dùng để định lượng mức độ tối ưu của 1 đường đi trong tính toán định tuyến, nhỏ nhất thì tối ưu nhất. RIP tính dựa vào số router trên đường đi tới đích gọi là hop-count. 
-
-Sự hội tụ mạng (convergence): thông tin định tuyến trong các bảng định tuyến phải cùng chính xác.
-Cân bằng tải (Load balancing): sử dụng băng thông hiệu quả, có thể dùng làm tuyến dự phòng trong khi tuyến đường chính bị ngắn
-
-2.4. Cấu hình và quản trị router
-
-người dùng > đặc quyền #
-
-
-Giao thức CDP: hoạt động tại layer 2 của mô hình OSI, giúp các thiết bị được kết nối trực tiếp với nhau trao đổi thông tin.
-CDP không phải giao thức định tuyến
-
-2.5. Cấu hình và quản trị Switch
-RIP - Routing Information Protocol: là giao thức định tuyến vector khoảng cách
-Hoạt động: chu kỳ 30s, gửi toàn bộ routing table ra các router láng giềng.
-RIP chỉ sử dụng metric là hop-count để tính ra tuyến đường tốt nhất tới mạng đích
-Sử dụng thuật toán Bellman-Ford để xây dựng routing table
-
-OSPF (Open Shortest Path First) là một giao thức định tuyến link - state điển hình
-
-
-Cổng trunk: khi một liên kết giữa hai switch hoặc giữa 1 router truyền tải lưu lượng của nhiều VLAN 
-Cổng truck phải chạy giao thức truyền đặc biệt : ISL or 802.1q
-
-
-Domain: lưu trữ thông tin các đối tượng
-AD được kiến tạo bởi 1 hay nhiều domain, có thể triển khai trên nhiều physical structure
-Truy xuất vào domain được quản trị thông qua Access Control Lists (ALC)
-OU (Organizational Unit): tổ chức các đối tượng thành các nhóm quản trị luận lý, tạo nên các cây OUs trong cùng 1 domain
-Trees: các domain được tổ chức theo cấu trúc hình cây (parent-child) ( 1 cha nhiều con - 1 con 1 cha)
-Forests: các domain có mối quan hệ tin cậy
-Site: nói về vị trí địa lý của các domain trong hệ thống. Khi hệ thống các domain phân tán ở vị trí khác nhau, những nơi này có quan hệ với nhau thì được gọi là các site
-DC: Domain controller: 1 máy tính chuyên dụng được setup WS, có bản sao của AD, phản hồi yêu cầu trong domain, xác thực người dùng.
-
+Theo EU: IoT là cơ sở hạ tầng mạng toàn cầu, liên kết các đối tượng vật lý và ảo thông qua việc khai thác khả năng thu thập dữ liệu và giao tiếp
+Theo ITU: IoT là một cơ sở hạ tầng toàn cầu cho xã hội thông tin, cho phép các dịch vụ tiên tiến bằng cách liên kết các vật thể (vật lý hoặc ảo) dựa trên các công nghệ thông tin và truyền thông hiện có và tương lai. [ITU-T Y.2060]
+Theo IETF: IoT là một mạng lưới toàn cầu gồm các đối tượng được kết nối với nhau, có khả năng định danh duy nhất, dựa trên các giao thức truyền thông tiêu chuẩn. 
+Theo IEEE: IoT là một mạng lưới các đối tượng, mỗi đối tượng được nhúng cảm biến và kết nối với Internet.
+Theo WSIS 2005 (World Summit on the Information Society): Bằng cách nhúng các thiết bị truyền tín hiệu di động tầm ngắn vào nhiều thiết bị và đồ vật hàng ngày, tạo ra các hình thức giao tiếp mới giữa con người và thiết bị, cũng như giữa các thiết bị với nhau.  
+Theo Gartner: IoT là mạng lưới các đối tượng vật lý có chứa công nghệ nhúng để tương tác với các trạng thái bên trong của chúng hoặc môi trường bên ngoài. 
+Theo Kevin Ashton: IoT là khái niệm sử dụng cảm biến để kết nối thế giới vật lý với thế giới số, cho phép hệ thống máy tính hiểu và phản ứng với môi trường.  
+Theo IoTAgenda: IoT là một hệ thống các thiết bị máy tính, máy cơ khí và thiết bị số, các vật thể, động vật hoặc con người có liên quan với nhau được cung cấp mã định danh duy nhất (UID) và có khả năng truyền dữ liệu qua mạng mà không cần tương tác giữa con người với nhau hoặc giữa con người với máy tính.
+Theo Forbes: IoT là một khái niệm kết nối bất kỳ thiết bị nào có công tắc bật/tắt với Internet (và/hoặc với nhau), từ điện thoại di động, máy pha cà phê, máy giặt, tai nghe, đèn, thiết bị đeo tay đến các thiết bị phức tạp hơn như động cơ phản lực hoặc giàn khoan dầu.  
+Theo IoT Association: IoT là mạng lưới các thiết bị vật lý được kết nối với Internet, cho phép thu thập và trao đổi dữ liệu mà không cần sự can thiệp của con người.  
+Theo Cisco Systems: IoT mô tả mạng lưới gồm hàng tỷ đối tượng vật lý trên thế giới, được kết nối với nhau thông qua Internet và có khả năng chia sẻ dữ liệu.
