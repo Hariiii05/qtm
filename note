@@ -18,6 +18,53 @@ Cảm ứng điện từ: xuất hiện suất điện động khi dây dẫn ch
 Quang điện: giải phóng hạt tải điện or phóng xạ khi có ánh sáng chiếu vào
 Hiệu ứng hall: xuất hiện hiệu điện thế khi tấm bán dẫn có dòng điện đặt trong từ trường, xác định vị trí
 
+2.1. Cảm biến và cơ cấu chấp hành
+Định nghĩa 
+Cảm biến: là thiết bị quan sát một hoặc nhiều thuộc tính của một thực thể vật lý và chuyển đổi các thuộc tính đó thành thông tin, đầu ra là tín hiệu số hoặc tương tự
+Cơ cấu chấp hành (bộ truyền động) là thiết bị có thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý để đáp ứng với thông tin nhận được.
+Các đặc trưng: S  = F(M): S là đại lượng đầu ra, M là đại lượng đầu vào: nhiệt độ, áp suất, trọng lượng
+Các đặc trưng cơ bản: hàm truyền, độ lớn tín hiệu đầu vào, sai số và độ chính xác, đường cong chuẩn cảm biến
+Phân loại  
+Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích: vật lý, hoá học, sinh học  
+Theo dạng kích thích: âm thanh, điện, từ, quang, cơ, nhiệt, bức xạ
+Theo tính năng các bộ cảm biến: độ nhạy, độ chính xác, độ phân giải
+Theo phạm vi sử dụng các bộ cảm biến: công nghiệp, nno, nckh, dân dụng, vũ trụ
+Theo thông số của mô hình mạch thay thế: cảm biến tích cực, cảm biến thụ động
+Một số loại cảm biến thường dùng
+
+2.2. Khuếch đại, lọc và xử lý tín hiệu 
+Khuếch đại: 
+Mục đích: Tăng tín hiệu yếu (uV, uA) cho bộ xử lý (ADC)
+Công cụ: Khuếch đại thuật toán (Op-amp)
+Lọc nhiễu:
+Mục đích: Giúp hệ thống ổn định, chính xác
+Chuẩn công nghiệp: Tín hiệu 4-20mA
+
+2.3. Chuyển đổi ADC, DAC  
+ADC (Analog to Digital)
+Chức năng: Chuyển tín hiệu vật lý sang dạng số
+Quy trình: Lấy mẫu -> Lượng tử hoá -> Mã hoá
+DAC (Digital to Analog)
+Chức năng: Chuyển dữ liệu số để điều khiển thiết bị vật lý
+Ứng dụng: Điều khiển quạt, đèn, van nước, robot
+
+2.4. Thu thập dữ liệu từ cảm biến 
+1. Thu thập dữ liệu: Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến, hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều nguồn dữ liệu khác. 
+2. Lọc dữ liệu: Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại. 
+3. Biến đổi dữ liệu: Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng phân tích. Các biến đổi có thể bao gồm việc chuyển đổi đơn vị đo, mã hóa dữ liệu, hoặc làm phẳng cấu trúc dữ liệu.
+4. Tổ chức và lưu trữ: Sắp xếp và lưu trữ dữ liệu theo một cách có tổ chức để dễ dàng truy cập và tìm kiếm. Dữ liệu có thể được lưu trữ trong cơ sở dữ liệu, hệ thống tập tin hoặc lưu trữ đám mây. 
+5. Phân tích dữ liệu: Áp dụng các kỹ thuật và công cụ phân tích để tìm kiếm mẫu, xu hướng và thông tin hữu ích từ dữ liệu. Phân tích dữ liệu có thể bao gồm thống kê, khai phá dữ liệu, học máy... 
+6. Trình bày kết quả: Trình bày kết quả phân tích dưới dạng biểu đồ, bảng, báo cáo hoặc hình ảnh sẽ giúp người sử dụng hiểu rõ hơn về thông tin được trích xuất từ dữ liệu. Kết quả có thể được lưu trữ và tiếp tục xử lý, sử dụng trong thời gian tiếp theo.
+
+2.5. Các giải thuật xử lý dữ liệu
+Tiền xử lý dữ liệu cảm biến  
+Lọc nhiễu (Noise Filtering): Sử dụng các bộ lọc để loại bỏ nhiễu khỏi dữ liệu cảm biến.  
+Chuẩn hóa dữ liệu (Normalization): Đưa dữ liệu về cùng một thang đo để dễ phân tích.  
+Phát hiện và xử lý dữ liệu thiếu (Missing Data Handling): Dùng kỹ thuật nội suy hoặc thay thế bằng giá trị trung bình hoặc Nhân tố ma trận xác suất (PMF) để xử lý dữ liệu khuyết thiếu.  
+Xử lý dữ liệu ngoại lệ (Data Outlier Detection): Phát hiện và xử lý các giá trị cảm biến bất thường – những giá trị khác biệt rõ rệt so với phần lớn dữ liệu còn lại.
+Phân tích dữ liệu cảm biến: Bao gồm học máy, học sâu, thống kê, chuỗi thời gian và xử lý tại biên.
+
+
 1. IPv6 cho mạng IoT
 IPv6 được xem là giải pháp tối ưu cho IoT nhờ không gian địa chỉ khổng lồ ($2^{128}$ địa chỉ) và những cải tiến vượt trội so với IPv4. Các lợi thế chính bao gồm:
 Khả năng mở rộng: Đáp ứng nhu cầu kết nối của hàng tỷ thiết bị cảm biến, đồ gia dụng, và hệ thống công nghiệp.
