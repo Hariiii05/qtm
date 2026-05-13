@@ -17,3 +17,33 @@ Hoả điện: tinh thể phân cực điện khi nhiệt độ thay đổi, dù
 Cảm ứng điện từ: xuất hiện suất điện động khi dây dẫn chuyển động trong từ trường, dùng đo tốc độ
 Quang điện: giải phóng hạt tải điện or phóng xạ khi có ánh sáng chiếu vào
 Hiệu ứng hall: xuất hiện hiệu điện thế khi tấm bán dẫn có dòng điện đặt trong từ trường, xác định vị trí
+
+1. IPv6 cho mạng IoT
+IPv6 được xem là giải pháp tối ưu cho IoT nhờ không gian địa chỉ khổng lồ ($2^{128}$ địa chỉ) và những cải tiến vượt trội so với IPv4. Các lợi thế chính bao gồm:
+Khả năng mở rộng: Đáp ứng nhu cầu kết nối của hàng tỷ thiết bị cảm biến, đồ gia dụng, và hệ thống công nghiệp.
+Loại bỏ NAT: IPv6 cung cấp khả năng truy cập đầu cuối (end-to-end), giúp các thiết bị có địa chỉ toàn cầu mà không cần qua kỹ thuật NAT phức tạp của IPv4.
+Tự động cấu hình (SLAAC): Cho phép thiết bị tự thiết lập địa chỉ theo cơ chế "plug-and-play" mà không cần máy chủ DHCP, rất hữu ích cho các mạng cảm biến quy mô lớn.
+Bảo mật và Hiệu suất: Tích hợp sẵn IPsec, hỗ trợ Multicast/Anycast hiệu quả hơn và cung cấp các bit ưu tiên chất lượng dịch vụ (QoS) cho các dữ liệu khẩn cấp.
+Phiên bản nén: Sử dụng cơ chế 6LoWPAN để rút ngắn tiêu đề IPv6, phù hợp cho các thiết bị công suất thấp.
+2. Giao thức định tuyến cho mạng tổn hao (RPL)
+Tài liệu tập trung vào mạng LLN (Low-power Lossy Networks) – loại mạng có đặc điểm tiêu thụ năng lượng thấp nhưng tỷ lệ mất mát dữ liệu cao và băng thông hạn chế.
+Giao thức RPL: Là giao thức định tuyến chuẩn cho LLN, hoạt động dựa trên đồ thị có hướng không chu trình (DAG) hướng tới đích.
+Các thành phần trong DAG: Bao gồm DAG ROOT (nút gốc tập trung dữ liệu), DAG rank (thứ tự khoảng cách đến gốc), nút cha (parent), nút con (children) và nút ngang cấp (sibling).
+RPL Instance: Một mạng có thể chạy nhiều thực thể RPL cùng lúc với các mục tiêu khác nhau (ví dụ: một luồng dữ liệu ưu tiên tiết kiệm năng lượng, một luồng khác ưu tiên độ trễ thấp).
+Hàm mục tiêu (Objective Function): Dùng để chọn đường đi tốt nhất. Ví dụ, hàm OF0 dựa trên số bước nhảy (hop count), trong khi MRHOF dựa trên số lần truyền dự kiến (ETX) để đánh giá chất lượng tuyến.
+3. Các mô hình kiến trúc mạng IoT
+Tài liệu trình bày sự tiến hóa của kiến trúc mạng từ đơn giản đến phức tạp:
+Mô hình 3 lớp: Gồm lớp Thiết bị (thu thập dữ liệu), lớp Mạng (truyền dẫn và điện toán biên), và lớp Ứng dụng (xử lý dữ liệu bằng AI/ML trên Cloud).
+Mô hình 5 lớp và 7 lớp: Phân chia chi tiết hơn để quản lý dữ liệu, bao gồm các lớp như trừu tượng hóa đối tượng, quản lý dịch vụ, tích lũy dữ liệu và quy trình hợp tác.
+Thành phần hệ thống: Một hệ thống IoT hoàn chỉnh bao gồm các yếu tố: Định danh (Identification), Cảm biến (Sensing), Truyền thông (Communication), Tính toán (Computation), Dịch vụ (Services) và Ngữ nghĩa (Semantics).
+4. Các tiêu chuẩn và giao thức truyền thông
+Các giao thức được chia thành nhiều tầng để đảm bảo sự tương thích giữa các thiết bị:
+Giao thức tầng ứng dụng:
+MQTT: Hoạt động theo mô hình Publish/Subscribe qua một máy chủ môi giới (Broker). Đây là giao thức "nhẹ", tốn ít băng thông và duy trì kết nối ổn định ngay cả khi mạng chập chờn.
+CoAP: Tương tự HTTP nhưng dành cho thiết bị ràng buộc, sử dụng UDP thay vì TCP để giảm tài nguyên và hỗ trợ truyền tin đa hướng (multicast).
+XMPP: Dựa trên ngôn ngữ XML, dùng cho nhắn tin thời gian thực và có khả năng mở rộng rất lớn.
+Giao thức cơ sở hạ tầng (Tầng vật lý và MAC):
+IEEE 802.15.4: Chuẩn cho mạng PAN không dây tốc độ thấp, tiêu thụ điện năng cực thấp và chi phí rẻ.
+BLE (Bluetooth Low Energy): Phạm vi phủ sóng lên tới 100m với mức tiêu thụ năng lượng tối thiểu, thường dùng trong điện thoại thông minh.
+Z-Wave: Chuyên dùng cho nhà thông minh (Home Automation) với cấu trúc mạng lưới (mesh), độ tin cậy cao nhưng là hệ thống khép kín.
+LTE-A: Phiên bản nâng cấp của LTE (4G) giúp truyền dữ liệu nhanh, ổn định và hỗ trợ nhiều thiết bị kết nối đồng thời.
