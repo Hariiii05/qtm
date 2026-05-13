@@ -9,3 +9,11 @@ Theo IoTAgenda: IoT là một hệ thống các thiết bị máy tính, máy c�
 Theo Forbes: IoT là một khái niệm kết nối bất kỳ thiết bị nào có công tắc bật/tắt với Internet (và/hoặc với nhau), từ điện thoại di động, máy pha cà phê, máy giặt, tai nghe, đèn, thiết bị đeo tay đến các thiết bị phức tạp hơn như động cơ phản lực hoặc giàn khoan dầu.  
 Theo IoT Association: IoT là mạng lưới các thiết bị vật lý được kết nối với Internet, cho phép thu thập và trao đổi dữ liệu mà không cần sự can thiệp của con người.  
 Theo Cisco Systems: IoT mô tả mạng lưới gồm hàng tỷ đối tượng vật lý trên thế giới, được kết nối với nhau thông qua Internet và có khả năng chia sẻ dữ liệu.
+
+# Nguyên lý chế tạo cảm biến
+Nhiệt điện: xuất hiện suất điện động khi có chênh lệch nhiệt độ giữa 2 mối vật liệu khác nhau
+Hoả điện: tinh thể phân cực điện khi nhiệt độ thay đổi, dùng để đo thông lượng ánh sáng
+Áp điện: xuất hiện điện tích khi vật liệu bị biến dạng cơ học: lực, áp suất, gia tốc
+Cảm ứng điện từ: xuất hiện suất điện động khi dây dẫn chuyển động trong từ trường, dùng đo tốc độ
+Quang điện: giải phóng hạt tải điện or phóng xạ khi có ánh sáng chiếu vào
+Hiệu ứng hall: xuất hiện hiệu điện thế khi tấm bán dẫn có dòng điện đặt trong từ trường, xác định vị trí
