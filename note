@@ -1,96 +1,47 @@
-Theo EU: IoT là cơ sở hạ tầng mạng toàn cầu, liên kết các đối tượng vật lý và ảo thông qua việc khai thác khả năng thu thập dữ liệu và giao tiếp
-Theo ITU: IoT là một cơ sở hạ tầng toàn cầu cho xã hội thông tin, cho phép các dịch vụ tiên tiến bằng cách liên kết các vật thể (vật lý hoặc ảo) dựa trên các công nghệ thông tin và truyền thông hiện có và tương lai. [ITU-T Y.2060]
-Theo IETF: IoT là một mạng lưới toàn cầu gồm các đối tượng được kết nối với nhau, có khả năng định danh duy nhất, dựa trên các giao thức truyền thông tiêu chuẩn. 
-Theo IEEE: IoT là một mạng lưới các đối tượng, mỗi đối tượng được nhúng cảm biến và kết nối với Internet.
-Theo WSIS 2005 (World Summit on the Information Society): Bằng cách nhúng các thiết bị truyền tín hiệu di động tầm ngắn vào nhiều thiết bị và đồ vật hàng ngày, tạo ra các hình thức giao tiếp mới giữa con người và thiết bị, cũng như giữa các thiết bị với nhau.  
-Theo Gartner: IoT là mạng lưới các đối tượng vật lý có chứa công nghệ nhúng để tương tác với các trạng thái bên trong của chúng hoặc môi trường bên ngoài. 
-Theo Kevin Ashton: IoT là khái niệm sử dụng cảm biến để kết nối thế giới vật lý với thế giới số, cho phép hệ thống máy tính hiểu và phản ứng với môi trường.  
-Theo IoTAgenda: IoT là một hệ thống các thiết bị máy tính, máy cơ khí và thiết bị số, các vật thể, động vật hoặc con người có liên quan với nhau được cung cấp mã định danh duy nhất (UID) và có khả năng truyền dữ liệu qua mạng mà không cần tương tác giữa con người với nhau hoặc giữa con người với máy tính.
-Theo Forbes: IoT là một khái niệm kết nối bất kỳ thiết bị nào có công tắc bật/tắt với Internet (và/hoặc với nhau), từ điện thoại di động, máy pha cà phê, máy giặt, tai nghe, đèn, thiết bị đeo tay đến các thiết bị phức tạp hơn như động cơ phản lực hoặc giàn khoan dầu.  
-Theo IoT Association: IoT là mạng lưới các thiết bị vật lý được kết nối với Internet, cho phép thu thập và trao đổi dữ liệu mà không cần sự can thiệp của con người.  
-Theo Cisco Systems: IoT mô tả mạng lưới gồm hàng tỷ đối tượng vật lý trên thế giới, được kết nối với nhau thông qua Internet và có khả năng chia sẻ dữ liệu.
+10. Phần mềm có khả năng xử lý đa phương tiện: Audacity
+13. Phát triển nội dung đa phương tiện: Adobe Flash
+17. Định dạng dữ liệu sử dụng trong đa phương tiện: JPEG
+48. Tạo video minh hoạ dạng mô phỏng 3D: Blender
+49. Bài học tương tác chất lượng cao: Moodle
+52. Âm thanh (dB): 20 - 20000Hz
+54. Kỹ thuật nén âm thanh: MP3
+57. Âm thanh không nén: WAV
+55. Số hoá: quantization
+60. Phần mềm xử lý âm thanh: Audacity
+61. Bộ đặc trưng phổ biến trong trích chọn âm thanh: MFCC: tăng hiệu quả phân tích: thành phần phổ của âm thanh
+63. Sampling rate: tần số lấy mẫu, tăng độ chi tiết, tăng kích thước dữ liệu không cần thiết
+64. Codec âm thanh phổ biến: H.264 (chuẩn nén dùng cho video)
+86: Mono có 1 kênh và stereo có 2 kênh
+87: Giảm kích thước file nhạc MP3: giảm bitrate
 
-# Nguyên lý chế tạo cảm biến
-Nhiệt điện: xuất hiện suất điện động khi có chênh lệch nhiệt độ giữa 2 mối vật liệu khác nhau
-Hoả điện: tinh thể phân cực điện khi nhiệt độ thay đổi, dùng để đo thông lượng ánh sáng
-Áp điện: xuất hiện điện tích khi vật liệu bị biến dạng cơ học: lực, áp suất, gia tốc
-Cảm ứng điện từ: xuất hiện suất điện động khi dây dẫn chuyển động trong từ trường, dùng đo tốc độ
-Quang điện: giải phóng hạt tải điện or phóng xạ khi có ánh sáng chiếu vào
-Hiệu ứng hall: xuất hiện hiệu điện thế khi tấm bán dẫn có dòng điện đặt trong từ trường, xác định vị trí
+101: Định dạng phổ biến ảnh trong web: PNG: hỗ trợ nền trong suốt, nén ảnh mà không mất dữ liệu
+103: JPEG: mất dữ liệu, kỹ thuật nén phổ biến, lưu trữ ảnh web
+104: GIF: 256 màu, kỹ thuật nén ảnh LZW
+109: Video chuẩn nén cho streaming: MP4, video trên web, nhẹ nhàng
+110: Định dạng phổ biến cho video hiện nay: .avi: không nén hoặc nén ít
+112: Video full HD: 1920x1080 140: 4K: 3840x2160 (khác độ phân giải)
+113: lossless: nén mà không mất dữ liệu
+115: Ảnh vẽ sơ đồ, nhiều chi tiết: SVG
+120: BMP: định dạng ảnh không nén, dung lượng lớn nhất
+122: Độ sâu màu 8 bit: 256 màu
+127: Công cụ chỉnh sửa video mã nguồn mở: Kdenlive
+128: Kỹ thuật cải thiện ảnh mờ: Sharpening
+129: In ảnh chất lượng cao: TIFF
+150: RAW: video chưa qua nén hoặc chỉnh sửa
+188: blocky: nén quá mạnh
+191: Video cần ít nhất 24 FPS để hiển thị mượt
+197. Video .mov thường gắn với: macOS
+222. Mã hoá tín hiệu video
+239. Phát hiện chuyển động trong video: trừ khung hình liên tiếp
 
-2.1. Cảm biến và cơ cấu chấp hành
-Định nghĩa 
-Cảm biến: là thiết bị quan sát một hoặc nhiều thuộc tính của một thực thể vật lý và chuyển đổi các thuộc tính đó thành thông tin, đầu ra là tín hiệu số hoặc tương tự
-Cơ cấu chấp hành (bộ truyền động) là thiết bị có thể thay đổi một hoặc nhiều thuộc tính của một thực thể vật lý để đáp ứng với thông tin nhận được.
-Các đặc trưng: S  = F(M): S là đại lượng đầu ra, M là đại lượng đầu vào: nhiệt độ, áp suất, trọng lượng
-Các đặc trưng cơ bản: hàm truyền, độ lớn tín hiệu đầu vào, sai số và độ chính xác, đường cong chuẩn cảm biến
-Phân loại  
-Theo nguyên lý chuyển đổi giữa đáp ứng và kích thích: vật lý, hoá học, sinh học  
-Theo dạng kích thích: âm thanh, điện, từ, quang, cơ, nhiệt, bức xạ
-Theo tính năng các bộ cảm biến: độ nhạy, độ chính xác, độ phân giải
-Theo phạm vi sử dụng các bộ cảm biến: công nghiệp, nno, nckh, dân dụng, vũ trụ
-Theo thông số của mô hình mạch thay thế: cảm biến tích cực, cảm biến thụ động
-Một số loại cảm biến thường dùng
+224: Giảm rung trong video quay tay: stabilization
+258: CSDL đa phương tiện hỗ trợ: dữ liệu phi cấu trúc
+259: metadata: dữ liệu mô tả dữ liệu khác
+263: Không nên lưu ảnh trực tiếp vào bảng làm giảm tốc độ truy xuất
+280: BLOB: lưu ảnh và âm thanh nhị phân
 
-2.2. Khuếch đại, lọc và xử lý tín hiệu 
-Khuếch đại: 
-Mục đích: Tăng tín hiệu yếu (uV, uA) cho bộ xử lý (ADC)
-Công cụ: Khuếch đại thuật toán (Op-amp)
-Lọc nhiễu:
-Mục đích: Giúp hệ thống ổn định, chính xác
-Chuẩn công nghiệp: Tín hiệu 4-20mA
-
-2.3. Chuyển đổi ADC, DAC  
-ADC (Analog to Digital)
-Chức năng: Chuyển tín hiệu vật lý sang dạng số
-Quy trình: Lấy mẫu -> Lượng tử hoá -> Mã hoá
-DAC (Digital to Analog)
-Chức năng: Chuyển dữ liệu số để điều khiển thiết bị vật lý
-Ứng dụng: Điều khiển quạt, đèn, van nước, robot
-
-2.4. Thu thập dữ liệu từ cảm biến 
-1. Thu thập dữ liệu: Thu thập dữ liệu từ các nguồn khác nhau như máy móc, cảm biến, hệ thống thông tin, hệ thống giao dịch, mạng xã hội, và nhiều nguồn dữ liệu khác. 
-2. Lọc dữ liệu: Loại bỏ dữ liệu không chính xác, không cần thiết hoặc lặp lại. 
-3. Biến đổi dữ liệu: Chuyển đổi dữ liệu ban đầu thành định dạng phù hợp để dễ dàng phân tích. Các biến đổi có thể bao gồm việc chuyển đổi đơn vị đo, mã hóa dữ liệu, hoặc làm phẳng cấu trúc dữ liệu.
-4. Tổ chức và lưu trữ: Sắp xếp và lưu trữ dữ liệu theo một cách có tổ chức để dễ dàng truy cập và tìm kiếm. Dữ liệu có thể được lưu trữ trong cơ sở dữ liệu, hệ thống tập tin hoặc lưu trữ đám mây. 
-5. Phân tích dữ liệu: Áp dụng các kỹ thuật và công cụ phân tích để tìm kiếm mẫu, xu hướng và thông tin hữu ích từ dữ liệu. Phân tích dữ liệu có thể bao gồm thống kê, khai phá dữ liệu, học máy... 
-6. Trình bày kết quả: Trình bày kết quả phân tích dưới dạng biểu đồ, bảng, báo cáo hoặc hình ảnh sẽ giúp người sử dụng hiểu rõ hơn về thông tin được trích xuất từ dữ liệu. Kết quả có thể được lưu trữ và tiếp tục xử lý, sử dụng trong thời gian tiếp theo.
-
-2.5. Các giải thuật xử lý dữ liệu
-Tiền xử lý dữ liệu cảm biến  
-Lọc nhiễu (Noise Filtering): Sử dụng các bộ lọc để loại bỏ nhiễu khỏi dữ liệu cảm biến.  
-Chuẩn hóa dữ liệu (Normalization): Đưa dữ liệu về cùng một thang đo để dễ phân tích.  
-Phát hiện và xử lý dữ liệu thiếu (Missing Data Handling): Dùng kỹ thuật nội suy hoặc thay thế bằng giá trị trung bình hoặc Nhân tố ma trận xác suất (PMF) để xử lý dữ liệu khuyết thiếu.  
-Xử lý dữ liệu ngoại lệ (Data Outlier Detection): Phát hiện và xử lý các giá trị cảm biến bất thường – những giá trị khác biệt rõ rệt so với phần lớn dữ liệu còn lại.
-Phân tích dữ liệu cảm biến: Bao gồm học máy, học sâu, thống kê, chuỗi thời gian và xử lý tại biên.
-
-
-1. IPv6 cho mạng IoT
-IPv6 được xem là giải pháp tối ưu cho IoT nhờ không gian địa chỉ khổng lồ ($2^{128}$ địa chỉ) và những cải tiến vượt trội so với IPv4. Các lợi thế chính bao gồm:
-Khả năng mở rộng: Đáp ứng nhu cầu kết nối của hàng tỷ thiết bị cảm biến, đồ gia dụng, và hệ thống công nghiệp.
-Loại bỏ NAT: IPv6 cung cấp khả năng truy cập đầu cuối (end-to-end), giúp các thiết bị có địa chỉ toàn cầu mà không cần qua kỹ thuật NAT phức tạp của IPv4.
-Tự động cấu hình (SLAAC): Cho phép thiết bị tự thiết lập địa chỉ theo cơ chế "plug-and-play" mà không cần máy chủ DHCP, rất hữu ích cho các mạng cảm biến quy mô lớn.
-Bảo mật và Hiệu suất: Tích hợp sẵn IPsec, hỗ trợ Multicast/Anycast hiệu quả hơn và cung cấp các bit ưu tiên chất lượng dịch vụ (QoS) cho các dữ liệu khẩn cấp.
-Phiên bản nén: Sử dụng cơ chế 6LoWPAN để rút ngắn tiêu đề IPv6, phù hợp cho các thiết bị công suất thấp.
-2. Giao thức định tuyến cho mạng tổn hao (RPL)
-Tài liệu tập trung vào mạng LLN (Low-power Lossy Networks) – loại mạng có đặc điểm tiêu thụ năng lượng thấp nhưng tỷ lệ mất mát dữ liệu cao và băng thông hạn chế.
-Giao thức RPL: Là giao thức định tuyến chuẩn cho LLN, hoạt động dựa trên đồ thị có hướng không chu trình (DAG) hướng tới đích.
-Các thành phần trong DAG: Bao gồm DAG ROOT (nút gốc tập trung dữ liệu), DAG rank (thứ tự khoảng cách đến gốc), nút cha (parent), nút con (children) và nút ngang cấp (sibling).
-RPL Instance: Một mạng có thể chạy nhiều thực thể RPL cùng lúc với các mục tiêu khác nhau (ví dụ: một luồng dữ liệu ưu tiên tiết kiệm năng lượng, một luồng khác ưu tiên độ trễ thấp).
-Hàm mục tiêu (Objective Function): Dùng để chọn đường đi tốt nhất. Ví dụ, hàm OF0 dựa trên số bước nhảy (hop count), trong khi MRHOF dựa trên số lần truyền dự kiến (ETX) để đánh giá chất lượng tuyến.
-3. Các mô hình kiến trúc mạng IoT
-Tài liệu trình bày sự tiến hóa của kiến trúc mạng từ đơn giản đến phức tạp:
-Mô hình 3 lớp: Gồm lớp Thiết bị (thu thập dữ liệu), lớp Mạng (truyền dẫn và điện toán biên), và lớp Ứng dụng (xử lý dữ liệu bằng AI/ML trên Cloud).
-Mô hình 5 lớp và 7 lớp: Phân chia chi tiết hơn để quản lý dữ liệu, bao gồm các lớp như trừu tượng hóa đối tượng, quản lý dịch vụ, tích lũy dữ liệu và quy trình hợp tác.
-Thành phần hệ thống: Một hệ thống IoT hoàn chỉnh bao gồm các yếu tố: Định danh (Identification), Cảm biến (Sensing), Truyền thông (Communication), Tính toán (Computation), Dịch vụ (Services) và Ngữ nghĩa (Semantics).
-4. Các tiêu chuẩn và giao thức truyền thông
-Các giao thức được chia thành nhiều tầng để đảm bảo sự tương thích giữa các thiết bị:
-Giao thức tầng ứng dụng:
-MQTT: Hoạt động theo mô hình Publish/Subscribe qua một máy chủ môi giới (Broker). Đây là giao thức "nhẹ", tốn ít băng thông và duy trì kết nối ổn định ngay cả khi mạng chập chờn.
-CoAP: Tương tự HTTP nhưng dành cho thiết bị ràng buộc, sử dụng UDP thay vì TCP để giảm tài nguyên và hỗ trợ truyền tin đa hướng (multicast).
-XMPP: Dựa trên ngôn ngữ XML, dùng cho nhắn tin thời gian thực và có khả năng mở rộng rất lớn.
-Giao thức cơ sở hạ tầng (Tầng vật lý và MAC):
-IEEE 802.15.4: Chuẩn cho mạng PAN không dây tốc độ thấp, tiêu thụ điện năng cực thấp và chi phí rẻ.
-BLE (Bluetooth Low Energy): Phạm vi phủ sóng lên tới 100m với mức tiêu thụ năng lượng tối thiểu, thường dùng trong điện thoại thông minh.
-Z-Wave: Chuyên dùng cho nhà thông minh (Home Automation) với cấu trúc mạng lưới (mesh), độ tin cậy cao nhưng là hệ thống khép kín.
-LTE-A: Phiên bản nâng cấp của LTE (4G) giúp truyền dữ liệu nhanh, ổn định và hỗ trợ nhiều thiết bị kết nối đồng thời.
+305: VR: Virtual Reality
+311: Hệ điều hành phổ biến: Android VR
+313: Tạo chiều sâu: đa điểm nhìn
+314: Theo dõi đầu: HMD (Head-Mounted Display)
+373: Đồng bộ chuyển động đầu người: cảm biến định hướng IMU
