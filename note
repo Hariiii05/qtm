@@ -1,3 +1,4 @@
+6. Dữ liệu tuyến tính: âm thanh
 10. Phần mềm có khả năng xử lý đa phương tiện: Audacity
 13. Phát triển nội dung đa phương tiện: Adobe Flash
 17. Định dạng dữ liệu sử dụng trong đa phương tiện: JPEG
@@ -10,15 +11,25 @@
 60. Phần mềm xử lý âm thanh: Audacity
 61. Bộ đặc trưng phổ biến trong trích chọn âm thanh: MFCC: tăng hiệu quả phân tích: thành phần phổ của âm thanh
 63. Sampling rate: tần số lấy mẫu, tăng độ chi tiết, tăng kích thước dữ liệu không cần thiết
-64. Codec âm thanh phổ biến: H.264 (chuẩn nén dùng cho video)
+64. Codec âm thanh phổ biến: MP3: nén và giải nén âm thanh
 86: Mono có 1 kênh và stereo có 2 kênh
 87: Giảm kích thước file nhạc MP3: giảm bitrate
+
+TIFF: chất lượng cao nhất
+PNG: Phổ biến, trong suốt, không mất dữ liệu
+SVG: sơ đồ, nhiều chi tiết
+GIF: 256 mày, kỹ thuật nén ảnh LZW
+MP4: streaming
+BMP: không nén, dung lượng lớn nhất
+JPEG: mất dữ liệu, nén, lưu web
+
 
 101: Định dạng phổ biến ảnh trong web: PNG: hỗ trợ nền trong suốt, nén ảnh mà không mất dữ liệu
 103: JPEG: mất dữ liệu, kỹ thuật nén phổ biến, lưu trữ ảnh web
 104: GIF: 256 màu, kỹ thuật nén ảnh LZW
 109: Video chuẩn nén cho streaming: MP4, video trên web, nhẹ nhàng
 110: Định dạng phổ biến cho video hiện nay: .avi: không nén hoặc nén ít
+111. H.264: chuẩn nén video
 112: Video full HD: 1920x1080 140: 4K: 3840x2160 (khác độ phân giải)
 113: lossless: nén mà không mất dữ liệu
 115: Ảnh vẽ sơ đồ, nhiều chi tiết: SVG
@@ -31,6 +42,7 @@
 188: blocky: nén quá mạnh
 191: Video cần ít nhất 24 FPS để hiển thị mượt
 197. Video .mov thường gắn với: macOS
+221: Video chuyển động nhanh lên dùng: 60 fps
 222. Mã hoá tín hiệu video
 239. Phát hiện chuyển động trong video: trừ khung hình liên tiếp
 
@@ -45,3 +57,6 @@
 313: Tạo chiều sâu: đa điểm nhìn
 314: Theo dõi đầu: HMD (Head-Mounted Display)
 373: Đồng bộ chuyển động đầu người: cảm biến định hướng IMU
+
+
+Ảnh dùng để nhận diện vật thể → TIFF
